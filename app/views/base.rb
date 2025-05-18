@@ -1,9 +1,15 @@
 # frozen_string_literal: true
 
 class Views::Base < Components::Base
-  # The `Views::Base` is an abstract class for all your views.
+  def around_template
+    doctype
 
-  # By default, it inherits from `Components::Base`, but you
-  # can change that to `Phlex::HTML` if you want to keep views and
-  # components independent.
+    html do
+      head do
+        title { page_title }
+      end
+
+      body { super }
+    end
+  end
 end
