@@ -31,6 +31,12 @@ class Views::Home < Views::Base
           "Test"
         end
       end
+
+      div do
+        a href: users_path, class: "font-medium text-blue-600 dark:text-blue-500 hover:underline" do
+          "Users"
+        end
+      end
     end
   end
 end

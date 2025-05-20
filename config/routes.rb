@@ -14,4 +14,6 @@ Rails.application.routes.draw do
 
   root "home#index"
   get "test" => "home#test"
+
+  resources :users, only: [:index, :show]
 end
