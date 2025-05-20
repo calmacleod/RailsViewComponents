@@ -4,6 +4,7 @@ class Components::Layout < Components::Base
   include Phlex::Rails::Helpers::CSRFMetaTags
   include Phlex::Rails::Helpers::CSPMetaTag
 
+
   def initialize(page_info)
     @page_info = page_info
   end

@@ -1,4 +1,4 @@
-class Views::User::Index < Views::Base
+class Views::Users::Index < Views::Base
   def initialize(users:)
     @users = users
   end

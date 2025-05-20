@@ -1,4 +1,4 @@
-class Views::User::Show < Views::Base
+class Views::Users::Show < Views::Base
   def initialize(user:)
     @user = user
   end
@@ -14,7 +14,7 @@ class Views::User::Show < Views::Base
       end
 
       p do
-        @user.email
+        @user.email_address
       end
     end
   end

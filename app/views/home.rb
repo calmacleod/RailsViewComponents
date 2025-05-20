@@ -37,6 +37,13 @@ class Views::Home < Views::Base
           "Users"
         end
       end
+
+      div do
+        a href: new_session_path, class: "font-medium text-blue-600 dark:text-blue-500 hover:underline" do
+          "Sign in"
+        end
+      end
+
     end
   end
 end
