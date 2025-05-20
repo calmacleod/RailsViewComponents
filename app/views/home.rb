@@ -4,6 +4,7 @@ class Views::Home < Views::Base
   end
 
   def page_title = "Home"
+  def layout = Layout
 
   def view_template
     div do
