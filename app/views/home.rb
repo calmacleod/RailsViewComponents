@@ -25,6 +25,12 @@ class Views::Home < Views::Base
       button class: "btn btn-netural rounded-full", data_controller: "click", data_action: "click#click" do
         "Click me"
       end
+
+      div do
+        a href: test_path, class: "font-medium text-blue-600 dark:text-blue-500 hover:underline" do
+          "Test"
+        end
+      end
     end
   end
 end

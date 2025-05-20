@@ -4,4 +4,8 @@ class HomeController < ApplicationController
       user_name: params[:name] || "Anonymous User"
     )
   end
+
+  def test
+    render Views::Test.new
+  end
 end
