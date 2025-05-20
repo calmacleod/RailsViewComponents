@@ -4,9 +4,9 @@ class Components::ReasonList < Components::Base
   end
 
   def view_template
-    h2 { "Here are some reasons why you should use my app:" }
+    h2(class: "text-lg font-bold") { "Here are some reasons why you should use my app:" }
 
-    ul do
+    ul class: "list-disc list-inside" do
       @reasons.each do |reason|
         li { reason }
       end

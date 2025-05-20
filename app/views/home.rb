@@ -6,12 +6,24 @@ class Views::Home < Views::Base
   def page_title = "Home"
 
   def view_template
-    h1 { "Welcome to my app, #{@user_name}" }
+    div do
+      h1 class: "text-2xl font-bold my-4" do
+        "Welcome to my app, #{@user_name}"
+      end
 
-    render Components::ReasonList.new(reasons: [
-      "It's free",
-      "It's easy to use",
-      "It's fast"
-    ])
+      h3 do
+        "Is this small?"
+      end
+
+      render Components::ReasonList.new(reasons: [
+        "It's free",
+        "It's easy to use",
+        "It's fast"
+      ])
+
+      button class: "btn btn-netural rounded-full" do
+        "Click me"
+      end
+    end
   end
 end
