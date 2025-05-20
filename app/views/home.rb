@@ -22,7 +22,7 @@ class Views::Home < Views::Base
         "It's fast"
       ])
 
-      button class: "btn btn-netural rounded-full", data_controller: "click", data_action: "click#click" do
+      button class: "btn btn-netural", data_controller: "click", data_action: "click#click" do
         "Click me"
       end
 

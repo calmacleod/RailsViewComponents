@@ -8,3 +8,7 @@
 @plugin "./daisyui.js" {
     themes: light --default
 }
+
+@utility btn {
+    @apply rounded-full;
+}
